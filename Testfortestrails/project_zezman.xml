@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Проверка наличия функциональности &quot;Зв`язатися з нами&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Открыть главную страницу https://zezman.ua/ua. 
+
+2) Перейти в раздел наличия &quot;Контакты&quot; 
+
+3) Проверить функциональность &quot;Звязаться с нами&quot;.</steps>
+										<expected>Функциональность &quot;Звязаться с нами&quot; отображается на странице &quot;Контакты&quot;.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Проверка обязательных полей формы &quot;Зв`язатися з нами&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Открыть главную страницу https://zezman.ua/ua.
+2) Перейти на страницу &quot;Контакты&quot;
+3) Перейти в раздел &quot;Зв`язатися з нами&quot;.
+4) Оставить все поля формы пустыми.
+5) Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на обязательные поля.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Проверка ввода недопустимого email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести недопустимый email в поле &quot;Email&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.
+</steps>
+										<expected>Ожидаемый результат: Появляется сообщение об ошибке, указывающее на недопустимый email.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Проверка отправки сообщения с валидными данными</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести валидные данные во все обязательные поля формы.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Ожидаемый результат: Сообщение успешно отправлено, появляется подтверждение.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Проверка ограничения длины сообщения</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести очень длинное сообщение в поле &quot;Повідомлення&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Ожидаемый результат: Появляется сообщение об ошибке, указывающее на ограничение длины сообщения.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Проверка негативного сценария - отправка пустого сообщения</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Оставить поле &quot;Повідомлення&quot; пустым.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Ожидаемый результат: Появляется сообщение об ошибке, указывающее на пустое сообщение.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Проверка негативного сценария - ввод некорректного номера телефона</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести некорректный номер телефона в поле &quot;Телефон&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Ожидаемый результат: Появляется сообщение об ошибке, указывающее на некорректный номер телефона.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Проверка негативного сценария - ввод специальных символов в поле &quot;Ім&apos;я&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести специальные символы в поле &quot;Ім&apos;я&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Ожидаемый результат: Появляется сообщение об ошибке, указывающее на недопустимые символы в поле &quot;Ім&apos;я&quot;.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Проверка негативного сценария - отправка сообщения с невыбранным вариантом &quot;Тема&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Не выбирать ни один вариант в поле &quot;Тема&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на невыбранную тему.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Проверка негативного сценария - отправка сообщения без согласия &quot;приймаю умови полiтики конфiдейцiиностi&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести валидные данные во все обязательные поля.
+Поставить отметку напротив графы &quot;приймаю умови полiтики конфiдейцiиностi&quot;.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на невыбранную отметку.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Проверка негативного сценария - отправка сообщения с некорректной длиной номера телефона</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести номер телефона с некорректной длиной в поле &quot;Телефон&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на некорректную длину номера телефона.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Проверка негативного сценария - отправка сообщения с некорректным форматом email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести некорректный формат email в поле &quot;Email&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на некорректный формат email.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Проверка негативного сценария - отправка сообщения с превышением допустимого лимита символов в поле &quot;Повідомлення&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Ввести сообщение, превышающее допустимый лимит символов в поле &quot;Повідомлення&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на превышение лимита символов в поле &quot;Повідомлення&quot;.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Проверка негативного сценария - отправка сообщения с недопустимым типом файла в поле вложения</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Выбрать файл недопустимого типа для вложения в поле &quot;Вкладення&quot;.
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на недопустимый тип файла в поле вложения.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Проверка негативного сценария - отправка сообщения с отсутствующим обязательным полем</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Открыть главную страницу https://zezman.ua/ua.
+Перейти на страницу &quot;Контакты&quot;
+Перейти в раздел &quot;Зв`язатися з нами&quot;.
+Оставить одно из обязательных полей пустым (например, поле &quot;Email&quot;).
+Заполнить остальные обязательные поля.
+Нажать на кнопку &quot;Відправити&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на отсутствующее обязательное поле.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
